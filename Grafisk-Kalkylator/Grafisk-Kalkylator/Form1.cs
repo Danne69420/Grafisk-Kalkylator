@@ -75,7 +75,7 @@ namespace Grafisk_Kalkylator
             }
             catch (Exception e)
             {
-                if (e is System.Data.EvaluateException)
+                if (e is System.Data.EvaluateException)     //Put in its own method
                 {
                     Calculation = Calculation.Replace(".", ",");
                     List<string> calculations = new List<string>();
