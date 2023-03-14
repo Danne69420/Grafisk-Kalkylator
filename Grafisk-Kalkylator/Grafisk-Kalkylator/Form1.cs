@@ -47,13 +47,16 @@ namespace Grafisk_Kalkylator
             {
                 Display.Text = Calculate();
             }
+            else if(sender == buttonClear)
+            {
+                Display.Text = string.Empty;
+            }
             else
             {
                 string newText = sender.Text;
                 Display.Text = Display.Text + newText;
 
             }
-
 
         }
         /// <summary>
@@ -64,11 +67,46 @@ namespace Grafisk_Kalkylator
         {
             string result = string.Empty;
 
-            string calculation = Display.Text;
+            string Calculation = Display.Text;
 
-            result = new DataTable().Compute(calculation, null).ToString();
+            try
+            {
+                result = new DataTable().Compute(Calculation, null).ToString();
+            }
+            catch (Exception e)
+            {
+                if (e is System.Data.EvaluateException)
+                {
+                    Calculation = Calculation.Replace(".", ",");
+                    List<string> calculations = new List<string>();
+                    calculations = Calculation.Split("^").ToList<string>();
+                    decimal[] PowResults = new decimal[calculations.Count];
 
+                    int i = 0;
+                    foreach (string calculation in calculations)
+                    {
+                        List<string> newCalculations = new List<string>();
+                        List<string> newCalculations2 = new List<string>();
+                        newCalculations = calculations[i].Split('+', '-', '*', '/').ToList<string>();
+                        decimal x = Convert.ToDecimal(newCalculations.Last().Trim());
+                        newCalculations2 = calculations[i+1].Split('+', '-', '*', '/').ToList<string>();
+                        decimal y = Convert.ToDecimal(newCalculations2.First().Trim());
+                        PowResults[i] = Convert.ToDecimal(Math.Pow(decimal.ToDouble(x), decimal.ToDouble(y)));
+                        decimal number = PowResults[i];
+                        string checker = x.ToString() + "^" + y.ToString();
+                        if (Calculation.Contains(checker) == true)
+                        {
+                            Calculation = Calculation.Replace(checker, PowResults[i].ToString());
+                        }
+                    }
+                    Calculation = Calculation.Replace(",", ".");
 
+                    return Calculation;
+                }
+
+                return "ERROR";
+            }
+            result = result.Replace(",", ".");
             return result;
         }
         private void button9_Click(object sender, EventArgs e)
@@ -86,7 +124,7 @@ namespace Grafisk_Kalkylator
             UpdateDisplay(buttonDecimal, e);
         }
 
-        private void buttonEquals_Click(object sender, EventArgs e)     //Sholud do the calculation. Unfinished!!
+        private void buttonEquals_Click(object sender, EventArgs e)     
         {
             UpdateDisplay(buttonEquals, e);
         }
@@ -156,19 +194,19 @@ namespace Grafisk_Kalkylator
             UpdateDisplay(button17, e);
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void buttonDivide_Click(object sender, EventArgs e)
         {
-            UpdateDisplay(button18, e);
+            UpdateDisplay(buttonDivide, e);
         }
 
-        private void button19_Click(object sender, EventArgs e)
+        private void buttonExponent_Click(object sender, EventArgs e)
         {
-            UpdateDisplay(button19, e);
+            UpdateDisplay(buttonExponent, e);
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        private void buttonClear_Click(object sender, EventArgs e)
         {
-            UpdateDisplay(button20, e);
+            UpdateDisplay(buttonClear, e);
         }
     }
 }

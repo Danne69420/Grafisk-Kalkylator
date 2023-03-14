@@ -46,9 +46,9 @@ namespace Grafisk_Kalkylator
             this.buttonMinus = new System.Windows.Forms.Button();
             this.buttonTimes = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.buttonDivide = new System.Windows.Forms.Button();
+            this.buttonExponent = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
             this.Display = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -222,35 +222,35 @@ namespace Grafisk_Kalkylator
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button18
+            // buttonDivide
             // 
-            this.button18.Location = new System.Drawing.Point(340, 183);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
-            this.button18.TabIndex = 17;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.buttonDivide.Location = new System.Drawing.Point(340, 183);
+            this.buttonDivide.Name = "buttonDivide";
+            this.buttonDivide.Size = new System.Drawing.Size(75, 23);
+            this.buttonDivide.TabIndex = 17;
+            this.buttonDivide.Text = "/";
+            this.buttonDivide.UseVisualStyleBackColor = true;
+            this.buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
             // 
-            // button19
+            // buttonExponent
             // 
-            this.button19.Location = new System.Drawing.Point(421, 183);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
-            this.button19.TabIndex = 18;
-            this.button19.Text = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.buttonExponent.Location = new System.Drawing.Point(421, 183);
+            this.buttonExponent.Name = "buttonExponent";
+            this.buttonExponent.Size = new System.Drawing.Size(75, 23);
+            this.buttonExponent.TabIndex = 18;
+            this.buttonExponent.Text = "^";
+            this.buttonExponent.UseVisualStyleBackColor = true;
+            this.buttonExponent.Click += new System.EventHandler(this.buttonExponent_Click);
             // 
-            // button20
+            // buttonClear
             // 
-            this.button20.Location = new System.Drawing.Point(502, 183);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 23);
-            this.button20.TabIndex = 19;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.buttonClear.Location = new System.Drawing.Point(502, 183);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonClear.TabIndex = 19;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // Display
             // 
@@ -267,9 +267,9 @@ namespace Grafisk_Kalkylator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Display);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button18);
+            this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.buttonExponent);
+            this.Controls.Add(this.buttonDivide);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.buttonTimes);
             this.Controls.Add(this.buttonMinus);
@@ -313,9 +313,9 @@ namespace Grafisk_Kalkylator
         private System.Windows.Forms.Button buttonMinus;
         private System.Windows.Forms.Button buttonTimes;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button buttonDivide;
+        private System.Windows.Forms.Button buttonExponent;
+        private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Label Display;
     }
 }
