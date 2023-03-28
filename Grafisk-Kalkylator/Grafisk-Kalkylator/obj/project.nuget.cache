@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "r/au7uwpIA+fZRk3IO3dz8iNaCr4sxFTherx6wZ6pif9HgPCY4YZ9EqJKHhP7sXISlasjOwGVlU5Hdj3J4cWOA==",
+  "dgSpecHash": "dLqIDe88t8VcYR1mrZbc9Sjm7MGABBcB76DtILJeDl93GteHTpEvL799nEQA6s+VEl9TLeVkukQCuaOr50tbAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniel.Kindvall\\source\\repos\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\daniel.kindvall\\Documents\\GitHub\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daniel.kindvall\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.29\\microsoft.netcore.app.host.win-x64.3.1.29.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,16 @@
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\bin\Debug\netcoreapp3.1\Grafisk-Kalkylator.exe
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\bin\Debug\netcoreapp3.1\Grafisk-Kalkylator.deps.json
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\bin\Debug\netcoreapp3.1\Grafisk-Kalkylator.runtimeconfig.json
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\bin\Debug\netcoreapp3.1\Grafisk-Kalkylator.runtimeconfig.dev.json
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\bin\Debug\netcoreapp3.1\Grafisk-Kalkylator.dll
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\bin\Debug\netcoreapp3.1\Grafisk-Kalkylator.pdb
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.csproj.AssemblyReference.cache
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk_Kalkylator.Form1.resources
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.csproj.GenerateResource.cache
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.AssemblyInfoInputs.cache
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.AssemblyInfo.cs
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.csproj.CoreCompileInputs.cache
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.dll
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.pdb
+C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\obj\Debug\netcoreapp3.1\Grafisk-Kalkylator.genruntimeconfig.cache

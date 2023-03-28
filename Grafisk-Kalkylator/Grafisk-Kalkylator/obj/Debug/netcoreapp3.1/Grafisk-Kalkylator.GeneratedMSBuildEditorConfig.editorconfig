@@ -1,3 +1,9 @@
 is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
 build_property.RootNamespace = Grafisk_Kalkylator
-build_property.ProjectDir = C:\Users\Daniel.Kindvall\source\repos\Grafisk-Kalkylator\Grafisk-Kalkylator\
+build_property.ProjectDir = C:\Users\daniel.kindvall\Documents\GitHub\Grafisk-Kalkylator\Grafisk-Kalkylator\Grafisk-Kalkylator\

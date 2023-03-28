@@ -8,19 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Daniel.Kindvall\\.nuget\\packages\\": {}
+    "C:\\Users\\daniel.kindvall\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel.Kindvall\\source\\repos\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator.csproj",
+      "projectUniqueName": "C:\\Users\\daniel.kindvall\\Documents\\GitHub\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator.csproj",
       "projectName": "Grafisk-Kalkylator",
-      "projectPath": "C:\\Users\\Daniel.Kindvall\\source\\repos\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator.csproj",
-      "packagesPath": "C:\\Users\\Daniel.Kindvall\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel.Kindvall\\source\\repos\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\obj\\",
+      "projectPath": "C:\\Users\\daniel.kindvall\\Documents\\GitHub\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator.csproj",
+      "packagesPath": "C:\\Users\\daniel.kindvall\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daniel.kindvall\\Documents\\GitHub\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\Grafisk-Kalkylator\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Daniel.Kindvall\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\daniel.kindvall\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,10 +56,17 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.29, 3.1.29]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -63,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

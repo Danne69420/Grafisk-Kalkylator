@@ -6,17 +6,15 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
 
 namespace Grafisk_Kalkylator
 {
+    /// <summary>
+    /// Graphic calculator in Windows Forms
+    /// </summary>
     public partial class Form1 : Form
     {
         /// <summary>
@@ -41,32 +39,28 @@ namespace Grafisk_Kalkylator
             List<string> calculations = new List<string>();
             //first split into before and after ^. "2^2" becomes "2","2" "2+2^2" becomes "2+2", "2"
             calculations = Calculation.Split("^").ToList<string>(); 
-            decimal[] PowResults = new decimal[calculations.Count];
+            decimal PowResults = 0;
 
-            int i = 0;
-            foreach (string calculation in calculations)
+            try
             {
-                try
+                List<string> newCalculations = new List<string>();
+                List<string> newCalculations2 = new List<string>();
+                //we don't split at - because it would break negative exponents and bases. ToDO: this makes subtraction after an exponent return ERROR. ex: 2^2-2 should give 4-2, instead gives ERROR
+                newCalculations = calculations[0].Split('+', '*', '/').ToList<string>();
+                decimal x = Convert.ToDecimal(newCalculations.Last().Trim());
+                newCalculations2 = calculations[1].Split('+', '*', '/').ToList<string>();     
+                decimal y = Convert.ToDecimal(newCalculations2.First().Trim());
+                PowResults = Convert.ToDecimal(Math.Pow(decimal.ToDouble(x), decimal.ToDouble(y)));
+                string checker = x.ToString() + "^" + y.ToString();
+                if (Calculation.Contains(checker) == true)
                 {
-                    List<string> newCalculations = new List<string>();
-                    List<string> newCalculations2 = new List<string>();
-                    newCalculations = calculations[i].Split('+', '-', '*', '/').ToList<string>();
-                    decimal x = Convert.ToDecimal(newCalculations.Last().Trim());
-                    newCalculations2 = calculations[i + 1].Split('+', '*', '/').ToList<string>();     //we don't split at - because it would break negative exponents
-                    decimal y = Convert.ToDecimal(newCalculations2.First().Trim());
-                    PowResults[i] = Convert.ToDecimal(Math.Pow(decimal.ToDouble(x), decimal.ToDouble(y)));
-                    decimal number = PowResults[i];
-                    string checker = x.ToString() + "^" + y.ToString();
-                    if (Calculation.Contains(checker) == true)
-                    {
-                        Calculation = Calculation.Replace(checker, PowResults[i].ToString());
-                    }
+                    Calculation = Calculation.Replace(checker, PowResults.ToString());
                 }
-                catch
+            }
+            catch
                 {
                     return "ERROR";
                 }
-            }
             Calculation = Calculation.Replace(",", ".");
             return Calculation;
         }
@@ -116,12 +110,15 @@ namespace Grafisk_Kalkylator
             }
             else if (Sender == buttonDEL)
             {
-                Display.Text = Display.Text.Remove(Display.Text.Length-1);
+                //can't remove from a string that is already empty, it would crash the program
+                if(Display.Text != string.Empty)
+                {
+                    Display.Text = Display.Text.Remove(Display.Text.Length - 1);
+                }
             }
             else
             {
-                string newText = Sender.Text;
-                Display.Text = Display.Text + newText;
+                Display.Text = Display.Text + Sender.Text;
             }
         }
 

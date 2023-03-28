@@ -6,8 +6,9 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\Daniel.Kindvall\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Daniel.Kindvall\\.nuget\\packages"
+      "C:\\Users\\daniel.kindvall\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\daniel.kindvall\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
